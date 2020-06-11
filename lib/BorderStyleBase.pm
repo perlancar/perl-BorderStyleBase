@@ -21,6 +21,7 @@ sub get_args {
 
 sub get_border_char {
     my ($self, $y, $x, $n, $args) = @_;
+    $n = 1 unless defined $n;
 
     my $bs_struct = $self->get_struct;
 
@@ -34,6 +35,9 @@ sub get_border_char {
                 "which after called still returns a coderef";
         }
         return $c2;
+    } else {
+        $c = $c x $n if $n > 1;
+        $c = "\e(0$c\e(B" if $bs_struct->{box_chars};
     }
     $c;
 }

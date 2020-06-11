@@ -36,7 +36,7 @@ sub get_border_char {
         }
         return $c2;
     } else {
-        $c = $c x $n if $n > 1;
+        $c = $c x $n if $n != 1;
         $c = "\e(0$c\e(B" if $bs_struct->{box_chars};
     }
     $c;

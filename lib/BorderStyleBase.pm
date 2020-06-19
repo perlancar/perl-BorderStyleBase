@@ -10,8 +10,12 @@ use strict 'subs', 'vars';
 use parent 'BorderStyleBase::Constructor';
 
 sub get_struct {
-    my $self = shift;
-    \%{"$self->{orig_class}::BORDER"};
+    my $self_or_class = shift;
+    if (ref $self_or_class) {
+        \%{"$self_or_class->{orig_class}::BORDER"};
+    } else {
+        \%{"$self_or_class\::BORDER"};
+    }
 }
 
 sub get_args {

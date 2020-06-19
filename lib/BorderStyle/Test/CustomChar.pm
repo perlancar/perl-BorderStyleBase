@@ -18,6 +18,12 @@ our %BORDER = (
             req => 1,
         },
     },
+    examples => [
+        {
+            summary => "Use x as the border character",
+            args => {character=>"x"},
+        },
+    ],
 );
 
 sub get_border_char {

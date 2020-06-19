@@ -1,3 +1,9 @@
+0.004   2020-06-19  Released-By: PERLANCAR; Urgency: medium
+
+	- Make get_struct() work as static method as well (BorderStyle
+	  2.0.3).
+
+
 0.003   2020-06-19  Released-By: PERLANCAR; Urgency: low
 
         - No spec changes.

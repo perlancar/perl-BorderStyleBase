@@ -1,3 +1,9 @@
+0.005   2021-01-23  Released-By: PERLANCAR; Urgency: medium
+
+	- Support BorderStyle 2.0.4 (characters for table with row/column
+	  spans).
+
+
 0.004   2020-06-19  Released-By: PERLANCAR; Urgency: medium
 
 	- Make get_struct() work as static method as well (BorderStyle

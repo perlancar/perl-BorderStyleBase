@@ -12,14 +12,14 @@ use parent 'BorderStyleBase';
 our %BORDER = (
     v => 2,
     summary => 'A border style that uses labeled characters as described in specification, to show which character goes where',
-    chars => [                 # y
-        # 0    1    2    3 <-- x
-        ['A', 'b', 'C', 'D'],  # 0
-        ['E', 'F', 'G'],       # 1
-        ['H', 'i', 'J', 'K'],  # 2
-        ['L', 'M', 'N'],       # 3
-        ['O', 'p', 'Q', 'R'],  # 4
-        ['S', 't', 'U', 'V'],  # 5
+    chars => [                                     # y
+        # 0    1    2    3    4    5    6    7     <-- x
+        ['A', 'B', 'C', 'D'],                      # 0
+        ['E', 'F', 'G'],                           # 1
+        ['H', 'I', 'J', 'K', 'a', 'b'],            # 2
+        ['L', 'M', 'N'],                           # 3
+        ['O', 'P', 'Q', 'R', 'e', 'f', 'g', 'h'],  # 4
+        ['S', 'T', 'U', 'V'],                      # 5
     ],
 );
 

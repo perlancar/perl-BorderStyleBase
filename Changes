@@ -1,3 +1,9 @@
+0.007   2021-01-31  Released-By: PERLANCAR; Urgency: medium
+
+	- [ux] When border struct doesn't provide row 6, return from row 0;
+	  when border struct doesn't provide row 7, return from row 5.
+
+
 0.006   2021-01-31  Released-By: PERLANCAR; Urgency: medium
 
 	- Update to BorderStyle 2.0.6 (extra top & border characters).

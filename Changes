@@ -1,3 +1,8 @@
+0.006   2021-01-31  Released-By: PERLANCAR; Urgency: medium
+
+	- Update to BorderStyle 2.0.6 (extra top & border characters).
+
+
 0.005   2021-01-23  Released-By: PERLANCAR; Urgency: medium
 
 	- Support BorderStyle 2.0.4 (characters for table with row/column

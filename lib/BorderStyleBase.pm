@@ -30,6 +30,10 @@ sub get_border_char {
     my $bs_struct = $self->get_struct;
 
     my $c = $bs_struct->{chars}[$y][$x];
+    if (!defined($c)) {
+        if    ($y == 6) { $c = $bs_struct->{chars}[0][$x] }
+        elsif ($y == 7) { $c = $bs_struct->{chars}[5][$x] }
+    }
     return unless defined $c;
 
     if (ref $c eq 'CODE') {

@@ -1,3 +1,9 @@
+0.009   2021-02-06  Released-By: PERLANCAR; Urgency: medium
+
+	- [bugfix] Forgot to 'use utf8' in BorderStyle::Test::Labeled now
+	  that we've used non-ASCII.
+
+
 0.008   2021-02-04  Released-By: PERLANCAR; Urgency: medium
 
 	- [ux] When border char (4,6) is not available, use (4,0); when

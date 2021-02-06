@@ -7,6 +7,8 @@ package BorderStyle::Test::Labeled;
 
 use strict;
 use warnings;
+use utf8;
+
 use parent 'BorderStyleBase';
 
 our %BORDER = (

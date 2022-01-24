@@ -1,13 +1,13 @@
 package BorderStyleBase;
 
+use strict 'subs', 'vars';
+#use warnings;
+use parent 'BorderStyleBase::Constructor';
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
-
-use strict 'subs', 'vars';
-#use warnings;
-use parent 'BorderStyleBase::Constructor';
 
 sub get_struct {
     my $self_or_class = shift;
@@ -35,6 +35,7 @@ sub get_border_char {
         elsif ($y == 4 && $x == 7) { $c = $bs_struct->{chars}[4][3]  }
         elsif ($y == 6)            { $c = $bs_struct->{chars}[0][$x] }
         elsif ($y == 7)            { $c = $bs_struct->{chars}[5][$x] }
+        elsif ($y == 8)            { $c = $bs_struct->{chars}[4][$x] }
     }
     return unless defined $c;
 

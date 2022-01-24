@@ -1,12 +1,12 @@
 package BorderStyleBase::Constructor;
 
+use strict 'subs', 'vars';
+use warnings;
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
-
-use strict 'subs', 'vars';
-#use warnings;
 
 sub new {
     my $class = shift;

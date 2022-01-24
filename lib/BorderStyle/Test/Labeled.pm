@@ -1,15 +1,15 @@
 package BorderStyle::Test::Labeled;
 
-# AUTHORITY
-# DATE
-# DIST
-# VERSION
-
 use strict;
 use warnings;
 use utf8;
 
 use parent 'BorderStyleBase';
+
+# AUTHORITY
+# DATE
+# DIST
+# VERSION
 
 our %BORDER = (
     v => 2,

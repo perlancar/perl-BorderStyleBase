@@ -35,7 +35,13 @@ sub get_border_char {
         elsif ($y == 4 && $x == 7) { $c = $bs_struct->{chars}[4][3]  }
         elsif ($y == 6)            { $c = $bs_struct->{chars}[0][$x] }
         elsif ($y == 7)            { $c = $bs_struct->{chars}[5][$x] }
-        elsif ($y == 8)            { $c = $bs_struct->{chars}[4][$x] }
+        elsif ($y == 8)            {
+            $c = $bs_struct->{chars}[4][$x];
+            if (!defined($c)) {
+                if    ($x == 6) { $c = $bs_struct->{chars}[4][0]  }
+                elsif ($x == 7) { $c = $bs_struct->{chars}[4][3]  }
+            }
+        }
     }
     return unless defined $c;
 

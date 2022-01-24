@@ -1,13 +1,13 @@
 package BorderStyle::Test::CustomChar;
 
+use strict;
+use warnings;
+use parent 'BorderStyleBase';
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
-
-use strict;
-use warnings;
-use parent 'BorderStyleBase';
 
 our %BORDER = (
     v => 2,
